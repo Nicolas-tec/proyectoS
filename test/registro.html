@@ -1,0 +1,68 @@
+<html>
+    <style>
+        body
+        {
+            background:url(../test/portada.png) ;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        table
+        {
+            border: 2px solid #FFFFFF;
+            background-color: #64FE2E;
+        }
+        input[type=text], input[type=password]
+        {
+            width: 100%;
+            padding: 8px 20px;
+            border: 2px solid #FFFFFF;
+            box-sizing: border-box;
+        }
+        img
+        {
+            width: 100px;
+            height: 100px;
+        }
+        label
+        {
+            font-size: 14px;
+            font-weight: bold;
+            font-family: arial;
+        }
+        input[type=submit]
+        {
+            background-color: #82FA58;
+            color: #000000;
+            padding: 8px 10px;
+            margin: 8px 0px;
+            border: solid;
+            cursor: pointer;
+            width: 40%;
+        }
+    </style>
+    <body>
+        <center>
+        <table>
+        <form name=" form" action="registro.php" method="post">
+            <td>nombre:<input type="text" name="nombre" required><p></p></td>
+            <tr></tr>
+           <td> cedula:<input type="text" name="cedula" required><p></p></td>
+           <tr></tr>
+            <td>correo:<input type="text" name="correo" required><p></p></td>
+            <tr></tr>
+            <td>clave:<input type="password" name="clave" required><p></p></td>
+            <tr></tr>
+            <td>direccion:<input type="text" name="direccion" required><p></p></td>
+            <tr>
+            </tr>
+            <td>telefono fijo:<input type="text" name="telefono_fijo" required><p></p></td> 
+            <tr></tr>
+            <td>celular:<input type="text" name="celular" required><p></p></td>
+            <tr></tr>
+                <td><input type="submit" value="registrar"></td>
+                <tr><td align="center" rowspan="5"><label><a href="../test/login.html">volver a inicio de seccion</a></label></td></tr>
+        </form>
+        </table>
+    </center>
+    </body>
+</html>
