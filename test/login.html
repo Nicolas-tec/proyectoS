@@ -1,0 +1,56 @@
+<html>
+    <style>
+        body
+        {
+            background:url(../test/portada.png) ;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        table
+        {
+            border: 2px solid #FFFFFF;
+            background-color: #64FE2E;
+        }
+        input[type=text], input[type=password]
+        {
+            width: 100%;
+            padding: 8px 20px;
+            border: 2px solid #FFFFFF;
+            box-sizing: border-box;
+        }
+        img
+        {
+            width: 100px;
+            height: 100px;
+        }
+        label
+        {
+            font-size: 14px;
+            font-weight: bold;
+            font-family: arial;
+        }
+        input[type=submit]
+        {
+            background-color: #82FA58;
+            color: #000000;
+            padding: 8px 10px;
+            margin: 8px 0px;
+            border: solid;
+            cursor: pointer;
+            width: 40%;
+        }
+    </style>
+    <center>
+        <form method="post" action="login.php">
+            <table>
+                <tr><td colspan="2" style="background-color: #01DF01; padding-bottom:5px; padding-top:5px ;"><label>inicio de seccion</label></td></tr>
+                <tr><td align="center" rowspan="5"><img src="simbolo.jpg"></td><td><label>usuario</label></td></tr>
+                <tr><td><input type="text" name="txusuario"></td></tr>
+                <tr><td><label>clave</label></td></tr>
+                <tr><td><input type="password" name="txclave"></td></tr>
+                <tr><td><input type="submit" value="ingresar"></td></tr>
+                <tr><td align="center" rowspan="5"><label><a href="../test/registro.html">crea una cuenta</a></label></td></tr>
+            </table>
+        </form>
+    </center>
+</html>
