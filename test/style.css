@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.conteiner
+{
+    min-width: 100vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.conteiner .switch
+{
+    height: 50px;
+    background: #BEF781;
+    padding: 0 1.5rem;
+    border-radius: 0.8rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.conteiner .switch .input
+{
+    display: none;
+}
+.conteiner .switch .rail
+{
+    position: relative;
+    width: 90px;
+    height: 30px;
+    background-color: white;
+    border-radius: 3rem;
+}
+.conteiner .switch .rail .circle
+{
+    display: block;
+    width: 36px;
+    height: 36px;
+    background: #BDBDBD;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    transition: transform 0.4s;
+}
+.conteiner .switch .indicator
+{
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    margin-left: 1.5rem;
+    transition: 0.4s;
+}
+.conteiner .switch .input:checked~ .rail .circle
+{
+    transform: translate(54px, -50%);
+}
+.conteiner .switch .input:checked~ .indicator
+{
+    background-color: #01DF01;
+
+}
+.dec, .reset, .inc
+{
+    width: 58px;
+    height: 25px;
+}
+#num
+{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+.btns
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 16px;
+}
+.conteiner *
+{
+    font-family:"Poppins",sans-serif;
+}
+input[type="number"]
+{
+    width: 100%;
+    font-size: 50px;
+    padding: 10px;
+    outline: none;
+    -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button
+{
+    -webkit-appearance: none;
+    margin: 0;
+}
