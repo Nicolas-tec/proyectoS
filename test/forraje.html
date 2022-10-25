@@ -1,0 +1,107 @@
+<html>
+    <style>
+        body
+        {
+            background:url(../test/portada.png) ;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+    <link rel="stylesheet" href="../test/style.css">
+    <body>
+        <center><font color="#088A08"><h1>panel de control de forraje</h1></font></center>
+        <center>
+        <table border="1px">
+            <td align="center" bgcolor="#088A08">
+                <font color="#FFFFFF"><h2>activacion</h2></font>
+            </td>
+            <td bgcolor="#088A08">
+        <div class="conteiner">
+            <label class="switch">
+                <input type="checkbox" class="input">
+                <div class="rail">
+                    <span class="circle"></span>
+                </div>
+                <span class="indicator"></span>
+            </label>
+        </div>
+        </td>
+        <tr>
+            <td bgcolor="#BDBDBD">
+                <h2>control de temperatura</h2>
+            </td>
+            <td bgcolor="white">
+                <div class="Container">
+                    <label class="switch">
+                    <h2 id="num">0</h2>
+                    <center><h2>&deg;C</h2></center>
+                    <div class="btns">
+                        <button class="dec" style="background-color: #BEF781; border-color: white;">-</button>
+                        <button class="reset" style="background-color: #BEF781; border-color: white;">restaurar</button>
+                        <button class="inc" style="background-color: #BEF781; border-color: white;">+</button>
+                    </div>
+                    </label>
+                </div>
+                <script src="main.js"></script>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="white">
+                <center><h2>&#37; de humedad</h2></center>
+            </td>
+            <td bgcolor="white">
+                <div class="conteiner">
+                    <input type="number" id="nmbr">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#BDBDBD">
+                <center><h2>&#37; de dioxiodo de carbono</h2></center>
+            </td>
+            <td>
+                <div class="conteiner">
+                    <input type="number" id="nmbr">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="white">
+                <center><h2>&#37; de oxigeno</h2></center>
+            </td>
+            <td>
+                <div class="conteiner">
+                    <input type="number" id="nmbr">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#BDBDBD">
+                <center><h2>control de riego</h2></center>
+            </td>
+            <td bgcolor="white">
+                <div class="conteiner">
+                    <label class="switch">
+                        <input type="checkbox" class="input">
+                        <div class="rail">
+                            <span class="circle"></span>
+                        </div>
+                        <span class="indicator"></span>
+                    </label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="white">
+                <center><h2>&#37; de acceso a luz solar</h2></center>
+            </td>
+            <td>
+                <div class="conteiner">
+                    <input type="number" id="nmbr">
+                </div>
+            </td>
+        </tr>
+        </table>
+        </center>
+    </body>
+</html>
